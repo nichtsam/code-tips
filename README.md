@@ -79,3 +79,67 @@ If your programming language has formatter, use it.
 If your team has conventions, follow it.
 
 If there is any more precise consensus, they should be prioritized before this general guide.
+
+## Reduce cognitive burden
+
+### Counts of parameters
+
+Remembering parameters is a burden.  
+You will need to remember the meaning of each and the order of them.
+
+None is awesome, though not always achievable.  
+One is great, very good possible option.  
+Two is ok, think twice.  
+Three is not ideal, a bit of challenging to call.  
+More is intimidating.
+
+A special case is the Rest Parameters,  
+I think it only make sense to use them in two cases,
+1. it's the only parameter, 
+2. the second parameter that complements the first one.
+
+If you need more than three, there probably is a way to group certain things together and reduce the load.
+
+### Boolean Flag
+
+Boolean Flag is a kind of parameter you should try to avoid.  
+It’s not easy to grasp, it hides context, and it limits you.  
+Seeing a boolean in arguments does not give you any clue of what question it's answering.
+
+There are exceptions,  
+it’s fine to use boolean flag if it’s the only parameter,  
+or if it’s forced to be explicit set with property name.
+
+### One thing at a function
+
+Function should do one thing and one thing only.
+
+So what is One Thing?
+
+A Function is doing one thing when everything inside it directly contributes to it.  
+A Function is doing one thing when you cannot meaningfully extract another function from it.
+
+### Levels of Abstraction
+
+There is a fundamental rule for a function,  
+that every line of a function should be at the same level of abstraction,  
+and that level should be one level below the function's name.
+
+This helps achieve [One thing at a function](#one-thing-at-a-function).
+
+### Don't repeat yourself
+
+Write DRY code. Reusability rocks.  
+If you find yourself repeating codes that can be meaningfully extract, please do so.
+
+### Make Side Effects Obvious
+
+It's dangerous to have implicit side effects.  
+It adds complicity, hides connection, and makes debugging difficult.
+
+Avoid them if you can,  
+if you cannot, make it clear to everyone that there is one.
+
+---
+
+_Here ends the jourey, I hope you had fun._

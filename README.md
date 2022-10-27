@@ -1,6 +1,21 @@
 # Clean Code
 > My humble thoughts.
 
+## Heads up
+
+This does not always apply.  
+Keep an open mind.  
+Care what you wrote.  
+Use common sense.
+
+Clean Code is about writing readable code for humans,  
+if it reads excellent, you don’t need to force rules upon it.
+
+## What is Clean Code not?
+
+- This is not a “Once and for All Perfect Solution”.
+- This is not about Extensibility.
+
 ## What is Clean Code?
 > Clean code is simple and direct.  
 > Clean code reads like well-written prose.  

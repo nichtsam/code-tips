@@ -140,6 +140,14 @@ It adds complicity, hides connection, and makes debugging difficult.
 Avoid them if you can,  
 if you cannot, make it clear to everyone that there is one.
 
+### Guards
+
+Fail fast, deal with failure upfront.  
+Thereafter, we can simply drop the concerns.
+
+Guarding failures beforehand is better than running code only if conditions are met.  
+Remembering context is hard, failing fast strips concerns away.
+
 ---
 
 _Here ends the jourey, I hope you had fun._

@@ -157,6 +157,8 @@ if you cannot, make it clear to everyone that there is one.
 
 ### Guards
 
+[examples](./examples/cognitive/guards.md)
+
 Fail fast, deal with failure upfront.  
 Thereafter, we can simply drop the concerns.
 

@@ -36,7 +36,7 @@ And it should
 
 ## Name things nicely
 
-> [examples](./examples/cognitive/naming.md)
+> [examples](./examples/naming.md)
 
 ### Variables & Constants : Noun
 This is a "thing", so name it as a thing.

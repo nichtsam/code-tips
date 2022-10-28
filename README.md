@@ -36,6 +36,8 @@ And it should
 
 ## Name things nicely
 
+> [examples](./examples/cognitive/naming.md)
+
 ### Variables & Constants : Noun
 This is a "thing", so name it as a thing.
 
@@ -60,6 +62,8 @@ This is an abstraction of a "thing", so name it as a thing.
 
 ### Format your code
 
+> [examples](./examples/formatting.md)
+
 The least you can do is make it look nice, don't be rude.
 
 1. Use blank line to separate parts that do their individual things,
@@ -68,6 +72,8 @@ The least you can do is make it look nice, don't be rude.
 4. Try to maintain a meaningful stream of thoughts top to bottom.
 
 ### What about Comments?
+
+> [examples](./examples/commenting.md)
 
 Avoid them, they usually bad.  
 Consider comments as the last resort, the unfortunate necessity.
@@ -84,6 +90,8 @@ comments are results of failing to do that.
 ### Stay consistent
 > should this be here ?
 
+> [examples](./examples/consistency.md)
+
 Don't do this here and do that there.  
 Try to have a principle, use the same pattern for the same thing.
 
@@ -98,6 +106,8 @@ If there is any more precise consensus, they should be prioritized before this g
 ## Reduce cognitive burden
 
 ### Counts of parameters
+
+> [examples](./examples/cognitive/parameters)
 
 Remembering parameters is a burden.  
 You will need to remember the meaning of each and the order of them.
@@ -117,6 +127,8 @@ If you need more than three, there probably is a way to group certain things tog
 
 ### Boolean Flag
 
+> [examples](./examples/cognitive/boolean-flag.md)
+
 Boolean Flag is a kind of parameter you should try to avoid.  
 It’s not easy to grasp, it hides context, and it limits you.  
 Seeing a boolean in arguments does not give you any clue of what question it's answering.
@@ -127,6 +139,8 @@ or if it’s forced to be explicit set with property name.
 
 ### One thing at a function
 
+> [examples](./examples/cognitive/one-thing.md)
+
 Function should do one thing and one thing only.
 
 So what is One Thing?
@@ -136,6 +150,8 @@ A Function is doing one thing when you cannot meaningfully extract another funct
 
 ### Levels of Abstraction
 
+> [examples](./examples/cognitive/levels-of-abstraction.md)
+
 There is a fundamental rule for a function,  
 that every line of a function should be at the same level of abstraction,  
 and that level should be one level below the function's name.
@@ -144,10 +160,14 @@ This helps achieve [One thing at a function](#one-thing-at-a-function).
 
 ### Don't repeat yourself
 
+> [examples](./examples/cognitive/dry.md) Haven't done this.
+
 Write DRY code. Reusability rocks.  
 If you find yourself repeating codes that can be meaningfully extract, please do so.
 
 ### Make Side Effects Obvious
+
+> [examples](./examples/cognitive/make-side-effect-obvious.md)
 
 It's dangerous to have implicit side effects.  
 It adds complicity, hides connection, and makes debugging difficult.
@@ -156,6 +176,8 @@ Avoid them if you can,
 if you cannot, make it clear to everyone that there is one.
 
 ### Guards
+
+> [examples](./examples/cognitive/guards.md)
 
 Fail fast, deal with failure upfront.  
 Thereafter, we can simply drop the concerns.
